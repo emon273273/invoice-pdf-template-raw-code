@@ -603,6 +603,14 @@ video {
   --tw-border-spacing-y: 0px;
   border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
+.break-before-page {
+  -moz-column-break-before: page;
+       break-before: page;
+}
+.break-after-page {
+  -moz-column-break-after: page;
+       break-after: page;
+}
 .flex-col {
   flex-direction: column;
 }

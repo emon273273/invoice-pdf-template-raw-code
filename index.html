@@ -9,6 +9,9 @@
         body {
             font-family: 'IBM Plex Sans', sans-serif;
         }
+        .page-break {
+            page-break-before: always;
+        }
         
     </style>
 </head>
@@ -27,7 +30,7 @@
                         <p>1 April 2023 - 31 March 2024</p>
                     </div>
                 </div>
-                <hr class="border-t-[1.5px] border-gray-800 mt-1">
+                <hr class="border-b  mt-1">
             </div>
 
             <!-- Taxable Income Section -->
@@ -37,8 +40,8 @@
                 <p class="font-bold">Taxable income</p>
                 <div class="w-32 flex flex-col items-end">
                   <p class="text-right">0.00</p>
-                  <hr class="w-24 h-px bg-black border-0">
-                  <hr class="w-24 h-px my-[1px] bg-black border-0">
+                  <hr class="w-24 h-px bg-black border-b">
+                  <hr class="w-24 h-px my-[1px] bg-black border-b">
                 </div>
               </div>
             
@@ -57,8 +60,8 @@
                 <p class="font-bold">2024 residual tax to pay</p>
                 <div class="w-32 flex flex-col items-end">
                   <p class="text-right">0.00</p>
-                  <hr class="w-24 h-px bg-black border-0">
-                  <hr class="w-24 h-px my-[1px] bg-black border-0">
+                  <hr class="w-24 h-px bg-black border-b">
+                  <hr class="w-24 h-px my-[1px] bg-black border-b">
                 </div>
               </div>
             </div>
@@ -87,7 +90,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                          <tr class="border-t-2 border-gray-800"></tr>
+                          <tr class="border-t border-gray-800"></tr>
                             <tr class="align-bottom">
                                 <td class="">2024 Residual Tax to Pay</td>
                                 <td class="text-center"></td>
@@ -96,7 +99,7 @@
                                 <td class="text-center"></td>
                                 <td class="text-center">0.00</td>
                             </tr>
-                            <tr class="border-t-2 border-gray-800">
+                            <tr class="border-t border-gray-800">
                                 <td class="">Amounts Due</td>
                                 <td class="text-center">0.00</td>
                                 <td class="text-center">0.00</td>
@@ -112,6 +115,9 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div class="page-break"></div>
+
+        
+      </div>
 </body>
 </html>
