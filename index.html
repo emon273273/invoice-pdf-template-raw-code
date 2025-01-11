@@ -1,123 +1,613 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
-        body {
-            font-family: 'IBM Plex Sans', sans-serif;
-        }
-        .page-break {
-            page-break-before: always;
-        }
-        
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="dist/styles.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap');
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+  </style>
 </head>
-<body class="bg-gray-100 flex justify-center items-center min-h-screen p-4">
-    <div class="w-[210mm] h-[297mm] mx-auto bg-white p-8 text-[13px] ">
-        <div class="space-y-4">
-            <!-- Header -->
+
+<body class="flex justify-center items-center min-h-screen p-4">
+  <div class="w-[210mm] h-[297mm] mx-auto bg-white p-8 text-[13px] ">
+    <section class="space-y-4">
+      <!-- Header -->
+      <div>
+        <div class="flex justify-between mb-1">
+          <div>
+            <p class="font-bold">Swift Business Solutions Limited (126-923-082)</p>
+            <p>2024 Company summary (IR4)</p>
+          </div>
+          <div class="text-right">
+            <p class="text-right ">001</p>
+            <p>1 April 2023 - 31 March 2024</p>
+          </div>
+        </div>
+        <hr class="border-b  mt-1">
+      </div>
+
+      <!-- Taxable Income Section -->
+      <div class="mt-8">
+        <!-- Taxable Income -->
+        <div class="flex justify-between">
+          <p class="font-bold">Taxable income</p>
+          <div class="w-32 flex flex-col items-end">
+            <p class="text-right">0.00</p>
+            <hr class="w-24 h-px bg-black border-b">
+            <hr class="w-24 h-px my-[1px] bg-black border-b">
+          </div>
+        </div>
+        <hr class="border-b  mt-1">
+
+        <!-- Tax on Taxable Income -->
+        <div class="flex justify-between mt-3">
+          <p>Tax on taxable income</p>
+          <div class="w-32 flex flex-col items-end">
+            <p class="text-right">0.00</p>
+
+          </div>
+        </div>
+
+        <!-- 2024 Residual Tax to Pay -->
+        <div class="flex justify-between mt-4">
+          <p class="font-bold">2024 residual tax to pay</p>
+          <div class="w-32 flex flex-col items-end">
+            <p class="text-right">0.00</p>
+            <hr class="w-24 h-px bg-black border-b">
+            <hr class="w-24 h-px my-[1px] bg-black border-b">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- Provisional Tax Section -->
+      <div class="mt-8 ">
+        <p class="underline">2025 Provisional Tax</p>
+        <p class="mt-3 ">2024 residual income tax does not exceed $5,000.00.</p>
+        <p class="">Therefore, there is no 2025 provisional tax payable.</p>
+      </div>
+
+      <!-- Payment Schedule -->
+      <div class="mt-8">
+        <p class="mb-6 underline">Payment Schedule</p>
+        <div class="w-full">
+          <table class="w-full px-7">
+            <thead>
+              <tr>
+                <th class="w-1/4 text-right"></th>
+                <th class="  px-2 font-normal">1st Inst.<br>28/08/24</th>
+                <th class="  px-2 font-normal">2nd Inst.<br>15/01/25</th>
+                <th class="  px-2 font-normal">Terminal<br>07/04/25</th>
+                <th class="  px-2 font-normal">3rd Inst.<br>07/05/25</th>
+                <th class="  px-2 font-normal">Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="border-t border-gray-800"></tr>
+              <tr class="align-bottom">
+                <td class="">2024 Residual Tax to Pay</td>
+                <td class="text-center"></td>
+                <td class="text-center"></td>
+                <td class="text-center">0.00</td>
+                <td class="text-center"></td>
+                <td class="text-center">0.00</td>
+              </tr>
+              <tr class="border-t border-gray-800">
+                <td class="">Amounts Due</td>
+                <td class="text-center">0.00</td>
+                <td class="text-center">0.00</td>
+                <td class="text-center">0.00</td>
+                <td class="text-center">0.00</td>
+                <td class="text-center">0.00</td>
+              </tr>
+              <tr class="border-t-2 border-black"></tr>
+              <tr class="h-1 bg-white"></tr>
+              <tr class="border-t-2 border-black mt-2"></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <div class="page-break"></div>
+    <br><br><br><br><br><br>
+    <!-- second invoice -->
+
+    <section>
+      <div class="space-y-4">
+        <!-- Header -->
+        <div>
+          <div class="flex justify-between mb-1">
             <div>
-                <div class="flex justify-between mb-1">
-                    <div>
-                        <p class="font-bold">Swift Business Solutions Limited (126-923-082)</p>
-                        <p>2024 Company summary (IR4)</p>
-                    </div>
-                    <div class="text-right">
-                        <p class="text-right ">001</p>
-                        <p>1 April 2023 - 31 March 2024</p>
-                    </div>
-                </div>
-                <hr class="border-b  mt-1">
+              <p class="font-bold">Swift Business Solutions Limited (126-923-082)</p>
+              <p>2024 Company summary (IR4)</p>
             </div>
+            <div class="text-right">
+              <p class="text-right">002</p>
+              <p>1 April 2023 - 31 March 2024</p>
+            </div>
+          </div>
+          <hr class="border-b mt-1">
+        </div>
 
-            <!-- Taxable Income Section -->
-            <div class="mt-8">
-              <!-- Taxable Income -->
+        <!-- Summary of shareholders clone -->
+        <div class="mt-8">
+          <p class="font-bold mb-4">Summary of shareholders</p>
+
+          <!-- First Shareholder -->
+          <div class="mb-8">
+            <p class="font-bold">Madhok, Shivangi</p>
+            <div class="space-y-2">
               <div class="flex justify-between">
-                <p class="font-bold">Taxable income</p>
-                <div class="w-32 flex flex-col items-end">
-                  <p class="text-right">0.00</p>
-                  <hr class="w-24 h-px bg-black border-b">
-                  <hr class="w-24 h-px my-[1px] bg-black border-b">
-                </div>
+                <p>Remuneration - No PAYE deducted</p>
+                <p>6,489.00</p>
               </div>
-            
-              <!-- Tax on Taxable Income -->
-              <div class="flex justify-between mt-3">
-                <p>Tax on taxable income</p>
-                <div class="w-32 flex flex-col items-end">
-                  <p class="text-right">0.00</p>
-                  <!-- <hr class="w-24 h-px bg-black border-0"> -->
-                  <!-- <hr class="w-24 h-px my-[1px] bg-black border-0"> -->
-                </div>
+              <div class="flex justify-between">
+                <p>Shareholder AIM tax credits</p>
+                <p>0.00</p>
               </div>
-            
-              <!-- 2024 Residual Tax to Pay -->
-              <div class="flex justify-between mt-4">
-                <p class="font-bold">2024 residual tax to pay</p>
-                <div class="w-32 flex flex-col items-end">
-                  <p class="text-right">0.00</p>
-                  <hr class="w-24 h-px bg-black border-b">
-                  <hr class="w-24 h-px my-[1px] bg-black border-b">
-                </div>
+              <div class="flex justify-between">
+                <p>Value of loans from Company</p>
+                <p>0.00</p>
               </div>
+              <div class="flex justify-between">
+                <p>Current Account Balance</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Loss offsets</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Subvention payments</p>
+                <p>0.00</p>
+              </div>
+              <hr class="border-b  mt-1">
             </div>
-            
+          </div>
 
-            <!-- Provisional Tax Section -->
-            <div class="mt-8 ">
-                <p class="underline">2025 Provisional Tax</p>
-                <p class="mt-3 ">2024 residual income tax does not exceed $5,000.00.</p>
-                <p class="">Therefore, there is no 2025 provisional tax payable.</p>
+          <!-- Second Shareholder -->
+          <div class="mb-8">
+            <p class="font-bold">Verma, Saurav</p>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <p>Remuneration - No PAYE deducted</p>
+                <p>6,489.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Shareholder AIM tax credits</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Value of loans from Company</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Current Account Balance</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Loss offsets</p>
+                <p>0.00</p>
+              </div>
+              <div class="flex justify-between">
+                <p>Subvention payments</p>
+                <p>0.00</p>
+              </div>
+              <hr class="border-b  mt-1">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- third invoice -->
+    <div class="page-break"></div>
+
+    <br>
+    <br>
+    <br>
+
+    <section>
+
+      <div>
+        <div class="space-y-4">
+          <!-- Header -->
+          <div class="flex justify-between mb-6">
+            <div>
+              <p>Income Tax Return</p>
+              <p>Company</p>
+              <p>1 April 2023 to 31 March 2024</p>
+            </div>
+            <div class="text-right">
+              <p>Swift Business Solutions Limited</p>
+              <p>126-923-082</p>
+              <p>Page 1</p>
+            </div>
+          </div>
+          <hr class="border-b  mt-1">
+
+          <!-- Summary Section -->
+          <div>
+            <p class="font-bold mb-4">Summary of IRD transmission</p>
+            <div class="space-y-2">
+              <!-- Sample entries -->
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">28C</span>
+                  <span>Business loss continuity</span>
+                </div>
+                <span>No</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">30</span>
+                  <span>Total losses</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">30A</span>
+                  <span>Total subvention losses</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">31</span>
+                  <span class="font-bold">Taxable income</span>
+                </div>
+
+                <span class="font-bold">0.00</span>
+              </div>
+              <hr class="border-b  mt-1">
+            </div>
+          </div>
+
+
+        </div>
+        <!-- Tax Calculation Section -->
+        <div class="mt-8">
+          <p class="font-bold mb-4 ">Tax Calculation</p>
+          <div class="space-y-2">
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">32B</span>
+                <span>Tax on taxable income</span>
+              </div>
+              <span>0.00</span>
             </div>
 
-            <!-- Payment Schedule -->
-            <div class="mt-8">
-                <p class="mb-6 underline">Payment Schedule</p>
-                <div class="w-full">
-                    <table class="w-full px-7">
-                        <thead>
-                            <tr>
-                                <th class="w-1/4 text-right"></th>
-                                <th class="  px-2 font-normal">1st Inst.<br>28/08/24</th>
-                                <th class="  px-2 font-normal">2nd Inst.<br>15/01/25</th>
-                                <th class="  px-2 font-normal">Terminal<br>07/04/25</th>
-                                <th class="  px-2 font-normal">3rd Inst.<br>07/05/25</th>
-                                <th class="  px-2 font-normal">Total</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="border-t border-gray-800"></tr>
-                            <tr class="align-bottom">
-                                <td class="">2024 Residual Tax to Pay</td>
-                                <td class="text-center"></td>
-                                <td class="text-center"></td>
-                                <td class="text-center">0.00</td>
-                                <td class="text-center"></td>
-                                <td class="text-center">0.00</td>
-                            </tr>
-                            <tr class="border-t border-gray-800">
-                                <td class="">Amounts Due</td>
-                                <td class="text-center">0.00</td>
-                                <td class="text-center">0.00</td>
-                                <td class="text-center">0.00</td>
-                                <td class="text-center">0.00</td>
-                                <td class="text-center">0.00</td>
-                            </tr>
-                            <tr class="border-t-2 border-black"></tr>
-                            <tr class="h-1 bg-white"></tr> 
-                            <tr class="border-t-2 border-black mt-2"></tr>
-                        </tbody>
-                    </table>
-                </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">32E</span>
+                <span>Foreign investors tax credit</span>
+              </div>
+              <span>0.00</span>
             </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">RDBF</span>
+                <span>Non-refundable R&D tax incentive credits brought forward</span>
+              </div>
+              <span>0.00</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">RDN</span>
+                <span>Non-refundable R&D tax incentive credits</span>
+              </div>
+              <span>0.00</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">RDR</span>
+                <span>Refundable R&D tax incentive credits</span>
+              </div>
+              <span>0.00</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">32IA</span>
+                <span>RLWT credits</span>
+              </div>
+              <span>0.00</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">32J</span>
+                <span class="font-bold">Residual income tax</span>
+              </div>
+              <span class="font-bold">0.00</span>
+            </div>
+            <hr class="border-b  mt-1">
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">32L</span>
+                <span>Refund or tax to pay</span>
+              </div>
+              <span>0.00</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">34</span>
+                <span>Provisional tax commencement date</span>
+              </div>
+              <span></span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">35A</span>
+                <span>Provisional tax option</span>
+              </div>
+              <span>Standard</span>
+            </div>
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">35B</span>
+                <span>2025 Provisional tax payable</span>
+              </div>
+              <span>0.00</span>
+            </div>
+          </div>
         </div>
         <div class="page-break"></div>
+        <div class="flex justify-between mb-6 space-y-2">
+          <div>
+            <p>Income Tax Return</p>
+            <p>Company</p>
+            <p>1 April 2023 to 31 March 2024</p>
+          </div>
+          <div class="text-right">
+            <p>Swift Business Solutions Limited</p>
+            <p>126-923-082</p>
+            <p>Page 2</p>
+          </div>
+        </div>
+        <hr class="border-b  mt-1">
+        <!-- share holder -->
 
-        
-      </div>
+        <div>
+          <p class="font-bold mb-4">Shareholders/Disclosures</p>
+          <div class="space-y-3">
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">36</span>
+                <span>Payments to non-residents</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">36A</span>
+                <span class="max-w-xl">Was non-resident withholding tax and/or non-resident contractor withholding tax
+                  deducted?</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">37</span>
+                <span class="max-w-xl">Did the company calculate CFC or FIF income under Question 18 or is it required
+                  to make a BEPS disclosure</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">38</span>
+                <span class="max-w-xl">Did the company repurchase, redeem or cancel any shares during the year?</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">39</span>
+                <span class="max-w-xl">Did the company receive any foreign sourced dividends during the year?</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">40</span>
+                <span>Is the company controlled/owned by non-residents?</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">41</span>
+                <span class="max-w-xl">The total lowest economic interest of shareholders during the income year</span>
+              </div>
+              <span>100.00 %</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">9</span>
+                <span>Is the company a non-resident for tax purposes?</span>
+              </div>
+              <span>No</span>
+            </div>
+
+            <div class="flex justify-between">
+              <div class="flex gap-4">
+                <span class="w-8">11</span>
+                <span>Has the company ceased?</span>
+              </div>
+              <span>No</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-break"></div>
+        <!-- header  -->
+
+        <div class="space-y-4">
+          <div class="flex justify-between mb-6">
+            <div>
+              <p>Income Tax Return</p>
+              <p>Company</p>
+              <p>1 April 2023 to 31 March 2024</p>
+            </div>
+            <div class="text-right">
+              <p>Swift Business Solutions Limited</p>
+              <p>126-923-082</p>
+              <p>Page 3</p>
+            </div>
+
+          </div>
+          <hr class="border-b  mt-1">
+          <!-- Header -->
+
+          <p class="font-bold mb-6">Summary of Shareholders - IR4S</p>
+
+          <!-- First Shareholder -->
+          <div class="mb-8">
+            <div class="flex justify-between mb-2">
+              <span class="font-bold">Name of Shareholder/Director/Relative</span>
+              <div class="text-right">
+                <p>Attachment 1</p>
+                <p class="font-bold">Madhok, Shivangi</p>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42A</span>
+                  <span>IRD number</span>
+                </div>
+                <span>120-034-227</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42B</span>
+                  <span>Remuneration - No PAYE deducted</span>
+                </div>
+                <span>6,489.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42C</span>
+                  <span>Shareholder AIM tax credits</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42D</span>
+                  <span>Value of loans from company</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42E</span>
+                  <span>Current account balance</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42F</span>
+                  <span>Loss offsets</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42G</span>
+                  <span>Subvention payments</span>
+                </div>
+                <span>0.00</span>
+              </div>
+            </div>
+            <hr class="border-b  mt-1">
+          </div>
+
+          <!-- Second Shareholder -->
+          <div class="mb-8">
+            <div class="flex justify-between mb-2">
+              <span class="font-bold">Name of Shareholder/Director/Relative</span>
+              <div class="text-right">
+                <p>Attachment 2</p>
+                <p class="font-bold">Verma, Saurav</p>
+              </div>
+            </div>
+            <div class="space-y-2">
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42A</span>
+                  <span>IRD number</span>
+                </div>
+                <span>095-960-571</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42B</span>
+                  <span>Remuneration - No PAYE deducted</span>
+                </div>
+                <span>6,489.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42C</span>
+                  <span>Shareholder AIM tax credits</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42D</span>
+                  <span>Value of loans from company</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42E</span>
+                  <span>Current account balance</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42F</span>
+                  <span>Loss offsets</span>
+                </div>
+                <span>0.00</span>
+              </div>
+              <div class="flex justify-between">
+                <div class="flex gap-4">
+                  <span class="w-8">42G</span>
+                  <span>Subvention payments</span>
+                </div>
+                <span>0.00</span>
+              </div>
+            </div>
+            <hr class="border-b  mt-1">
+
+          </div>
+          <div class="page-break"></div>
+        </div>
+    </section>
+  </div>
+
+
 </body>
+
 </html>
